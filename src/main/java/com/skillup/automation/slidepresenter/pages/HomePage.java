@@ -23,7 +23,7 @@ public class HomePage extends CommonPage {
 
     public HomePage closeWidgetIfPresent() {
         if (isElementPresent(CLOSE_WIDGET_BUTTON)) {
-            driver.findElement(find(CLOSE_WIDGET_BUTTON)).click();
+            click(CLOSE_WIDGET_BUTTON);
         }
         return this;
     }
